@@ -89,6 +89,7 @@
       <DependentUpon>frmOgrenciEkle.cs</DependentUpon>
     </Compile>
     <Compile Include="Methods\Egitimler.cs" />
+    <Compile Include="Methods\KatılımID.cs" />
     <Compile Include="Methods\Ogrenciler.cs" />
     <Compile Include="Methods\Okullar.cs" />
     <Compile Include="Program.cs" />

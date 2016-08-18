@@ -16,8 +16,7 @@ public class Egitimler
     public String Egitmen { get; set; }
     public int Sure { get; set; }
     public DateTime Baslangic { get; set; }
-    public DateTime Bitis { get; set; }
-    [StringLength(50)]
+
     public String Turu { get; set; }
 
     public static List<Egitimler> GetRecords()

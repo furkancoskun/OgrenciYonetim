@@ -38,12 +38,14 @@ partial class frmAnaEkran
             // 
             // label1
             // 
+            this.label1.AutoSize = true;
+            this.label1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.label1.Font = new System.Drawing.Font("Minion Pro", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(30, 25);
+            this.label1.Location = new System.Drawing.Point(-299, 121);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(478, 379);
+            this.label1.Size = new System.Drawing.Size(266, 89);
             this.label1.TabIndex = 0;
-            this.label1.Text = "MİMCE DERNEĞİ ÖĞRENCİ OTOMASYONU";
+            this.label1.Text = "MİMCE ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.UseWaitCursor = true;
             // 
@@ -122,9 +124,12 @@ partial class frmAnaEkran
             this.Controls.Add(this.btnOgrenciGuncelle);
             this.Controls.Add(this.btnOgrenciEkle);
             this.Controls.Add(this.label1);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "frmAnaEkran";
             this.Text = "Ana Ekran";
+            this.Load += new System.EventHandler(this.frmAnaEkran_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
     }
 

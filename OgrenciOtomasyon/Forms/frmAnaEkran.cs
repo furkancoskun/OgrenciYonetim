@@ -27,13 +27,18 @@ public partial class frmAnaEkran : Form
 
     private void btnEtkinlikEkle_Click(object sender, EventArgs e)
     {
-        frmEtkinlikEkle goster = new frmEtkinlikEkle();
+        frmEgitimler goster = new frmEgitimler();
         goster.ShowDialog();
     }
 
     private void btnYoklamaAl_Click(object sender, EventArgs e)
     {
-        frmYoklama goster = new frmYoklama();
+        frmEgitimler goster = new frmEgitimler();
         goster.ShowDialog();
+    }
+
+    private void frmAnaEkran_Load(object sender, EventArgs e)
+    {
+
     }
 }
