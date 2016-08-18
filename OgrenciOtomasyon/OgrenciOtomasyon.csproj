@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Methods\Degerler.cs" />
     <Compile Include="Forms\frmEgitimler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +67,12 @@
     </Compile>
     <Compile Include="Forms\frmEtkinlikEkle.Designer.cs">
       <DependentUpon>frmEtkinlikEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmYoklama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmYoklama.Designer.cs">
+      <DependentUpon>frmYoklama.cs</DependentUpon>
     </Compile>
     <Compile Include="Methods\Bolumler.cs" />
     <Compile Include="Methods\DbConnect.cs" />
@@ -88,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmEtkinlikEkle.resx">
       <DependentUpon>frmEtkinlikEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmYoklama.resx">
+      <DependentUpon>frmYoklama.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

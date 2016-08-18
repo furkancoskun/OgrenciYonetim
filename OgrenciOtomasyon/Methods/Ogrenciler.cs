@@ -31,8 +31,16 @@ public  class Ogrenciler
             db.SaveChanges();
         }
     }
+    public static List<Ogrenciler> GetRecords()
+    {
+        using (var db= new DbConnect())
+        {
+         return   db.Ogrencilers.ToList();
+            
+        }
+    }
 
-
+ 
 
 
 }
