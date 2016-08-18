@@ -11,23 +11,23 @@ using System.Windows.Forms;
 
 
 
-    public partial class frmAnaEkran : Form
+public partial class frmAnaEkran : Form
+{
+    public frmAnaEkran()
     {
-        public frmAnaEkran()
-        {
-            InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnOgrenciEkle_Click(object sender, EventArgs e)
-        {
-            frmOgrenciEkle goster = new frmOgrenciEkle();
-            goster.Show();
-        
-
-        }
+        InitializeComponent();
     }
+
+    private void button1_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void btnOgrenciEkle_Click(object sender, EventArgs e)
+    {
+        frmOgrenciEkle goster = new frmOgrenciEkle();
+        goster.Show();
+
+
+    }
+}
