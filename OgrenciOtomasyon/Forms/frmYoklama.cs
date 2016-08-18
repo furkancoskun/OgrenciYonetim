@@ -23,7 +23,7 @@ using System.Windows.Forms;
             cmbSure.Items.Add(i);
         }
         lblEgtmAdi.Text = Degerler.EgitimAdi;
-        var listOgrenciId = new List<int>;
+        var listOgrenciId = new List<int> ();
         var list = Ogrenciler.GetRecords();
 
         for (int i = 0; i < list.Count; i++)

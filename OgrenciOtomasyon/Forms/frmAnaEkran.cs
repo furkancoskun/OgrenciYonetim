@@ -18,16 +18,22 @@ public partial class frmAnaEkran : Form
         InitializeComponent();
     }
 
-    private void button1_Click(object sender, EventArgs e)
-    {
-
-    }
-
+   
     private void btnOgrenciEkle_Click(object sender, EventArgs e)
     {
         frmOgrenciEkle goster = new frmOgrenciEkle();
-        goster.Show();
+        goster.ShowDialog();
+    }
 
+    private void btnEtkinlikEkle_Click(object sender, EventArgs e)
+    {
+        frmEtkinlikEkle goster = new frmEtkinlikEkle();
+        goster.ShowDialog();
+    }
 
+    private void btnYoklamaAl_Click(object sender, EventArgs e)
+    {
+        frmYoklama goster = new frmYoklama();
+        goster.ShowDialog();
     }
 }

@@ -14,7 +14,7 @@ public class DbConnect:DbContext
     {
         modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
     }
-    public DbConnect() : base("Data Source=.;Initial Catalog = MIMCE; Persist Security Info=True;User ID=sa;Password=12345") { }
+    public DbConnect() : base("Data Source=.;Initial Catalog = MIMCE; Persist Security Info=True;User ID=sa ;Password=1234") { }
 
     public DbSet<Ogrenciler> Ogrencilers { get; set; }
     public DbSet<Okullar> Okullars { get; set; }

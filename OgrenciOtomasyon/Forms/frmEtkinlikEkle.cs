@@ -26,7 +26,29 @@ using System.Windows.Forms;
             EgitimKonu = txtEgtmKonu.Text,
             Sure = (int)numDers.Value,
             Turu = cmbTuru.SelectedItem.ToString()
+
         };
+
         Egitimler.Insert(egitim);
+
+        MessageBox.Show("Kaydedildi");
+        txtEgitimAdi.Clear();
+        txtEgitmen.Clear();
+        txtEgtmKonu.Clear();
+        dateBaslangic.Value = DateTime.Today;
+        numDers.Value = 0;
+        cmbTuru.SelectedItem ="";
+        txtEgitimAdi.Focus();
+    }
+
+    private void btnTemizle_Click(object sender, EventArgs e)
+    {
+        txtEgitimAdi.Clear();
+        txtEgitmen.Clear();
+        txtEgtmKonu.Clear();
+        dateBaslangic.Value = DateTime.Today;
+        numDers.Value = 0;
+        cmbTuru.SelectedItem = "";
+        txtEgitimAdi.Focus();
     }
 }

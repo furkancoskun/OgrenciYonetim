@@ -93,6 +93,9 @@
     <Compile Include="Methods\Okullar.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\frmAnaEkran.resx">
+      <DependentUpon>frmAnaEkran.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmEgitimler.resx">
       <DependentUpon>frmEgitimler.cs</DependentUpon>
     </EmbeddedResource>

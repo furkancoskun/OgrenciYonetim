@@ -17,7 +17,8 @@ using System.Windows.Forms;
 
     private void frmOgrenciEkle_Load(object sender, EventArgs e)
     {
-        cmbOkul.DataSource = Okullar.GetRecords();
+        
+       cmbOkul.DataSource = Okullar.GetRecords();
         cmbOkul.DisplayMember = "Adi";
         cmbOkul.ValueMember = "OkulID";
 
@@ -26,6 +27,11 @@ using System.Windows.Forms;
         cmbBolum.ValueMember = "ID";
     
 
+    }
+
+    internal void Showdialog()
+    {
+        throw new NotImplementedException();
     }
 
     private void txtTelefonNo_TextChanged(object sender, EventArgs e)
@@ -45,6 +51,22 @@ using System.Windows.Forms;
         ogrenci.OkulID = Convert.ToInt32(cmbOkul.SelectedValue);
         Ogrenciler.Insert(ogrenci);
 
+        MessageBox.Show("kayıt yapıldı");
 
+        txtAdi.Clear();
+        txtSoyadi.Clear();
+        txtTelefonNo.Clear();
+        txtMail.Clear();
+        txtAdi.Focus();
+       
+    }
+
+    private void btnTemizle_Click(object sender, EventArgs e)
+    {
+         txtAdi.Clear();
+        txtSoyadi.Clear();
+        txtTelefonNo.Clear();
+        txtMail.Clear();
+        txtAdi.Focus();
     }
 }
