@@ -24,5 +24,10 @@ using System.Windows.Forms;
         }
         dataGridView1.DataSource = Egitimler.GetRecords();
         }
+
+    private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+    {
+
     }
+}
 
